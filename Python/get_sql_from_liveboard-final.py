@@ -10,8 +10,8 @@ from thoughtspot_rest_api_v1 import *
 # Constants
 
 tsURL = "https://training.thoughtspot.cloud"
-username = "user251"
-password = "W1nterNeverEnds!"
+username = "userxyz"
+password = "password123"
 org_id = 1613534286  # Get the org ID from the playground using GET /api/rest/2.0/auth/session/user
 
 
