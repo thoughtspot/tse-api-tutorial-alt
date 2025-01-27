@@ -9,12 +9,14 @@ from thoughtspot_rest_api_v1 import *
 
 # Constants
 
+# Lesson 1 - set the constants
 tsURL = "https://training.thoughtspot.cloud"
 username = "userxyz"
 password = "password123"
 org_id = 0  # Get the org ID from the playground using GET /api/rest/2.0/auth/session/user
 
 
+# Lesson 2 - create the authenticated client
 def create_api_client() -> TSRestApiV2:
     """
     Creates a new TSRestApiV2 client that can be used for calls to ThoughtSpot.
@@ -27,6 +29,7 @@ def create_api_client() -> TSRestApiV2:
         show_api_error_and_exit(e)
 
 
+# Lesson 3 - Get a GUID for the liveboard to use
 def get_liveboard_guid(ts: TSRestApiV2, liveboard_name: str) -> str:
     """
     Retrieves the GUID for a liveboard with the given name.  If there are multiple, returns the first one.
@@ -39,7 +42,7 @@ def get_liveboard_guid(ts: TSRestApiV2, liveboard_name: str) -> str:
     return ""
 
 
-# For the liveboard, get the SQL for each visualization.
+# Lesson 4 - For the liveboard, get the SQL for each visualization.
 def get_liveboard_sql(ts: TSRestApiV2, liveboard_guid: str) -> List[Tuple[str, str]]:
     """
     Returns the SQL queries for each visualization in a liveboard.  Each returned value is a tuple with the ID and
@@ -59,6 +62,7 @@ def get_liveboard_sql(ts: TSRestApiV2, liveboard_guid: str) -> List[Tuple[str, s
     return queries
 
 
+# Lesson 5 - Print the results
 def print_sql(sql: List[Tuple[str, str]]) -> None:
     """
     Prints the vizID and SQL to the console.
