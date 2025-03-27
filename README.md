@@ -39,5 +39,3 @@ To set up for the Typescript exercises, do the following:
 2. Download/copy the files from the Typescript/ folder (get_permissions.ts, etc.) to the new folder.
 3. Using the command line, run the command `npm install`.  You should see multiple packages successfully install and receive a message like the following:  `added 354 packages, and audited 355 packages in 16s`.
 4. Test by running `npm start`.  You should see successful execution.
-
-
