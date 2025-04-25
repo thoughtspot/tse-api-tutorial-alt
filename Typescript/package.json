@@ -1,0 +1,27 @@
+{
+  "name": "sdk-sample",
+  "version": "1.0.0",
+  "main": "get_permissions.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm get_permissions.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sdk",
+    "thoughtspot"
+  ],
+  "author": "Bill Back",
+  "license": "MIT",
+  "dependencies": {
+    "@thoughtspot/rest-api-sdk": "^2.0.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
